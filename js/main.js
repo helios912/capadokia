@@ -8,6 +8,23 @@ $(function () {
     fade: true,
   });
 
+  Fancybox.bind('[data-fancybox="gallery"]', {
+    compact: false,
+    contentClick: 'iterateZoom',
+    Images: {
+      Panzoom: {
+        maxScale: 5,
+      },
+    },
+    Toolbar: {
+      display: {
+        left: ['infobar'],
+        middle: [],
+        right: ['iterateZoom', 'close'],
+      },
+    },
+  });
+
   //   $('.menu, .our-trip__body').on('click', 'a', function (event) {
   //     //отменяем стандартную обработку нажатия по ссылке
   //     event.preventDefault();

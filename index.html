@@ -7,43 +7,48 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/slick.css" />
-    <link
-      rel="stylesheet"
-      href="./css/fancybox.css"
-      <link
-      rel="stylesheet"
-      href="css/animate.css"
-    />
+    <link rel="stylesheet" href="./css/fancybox.css" />
+    <link rel="stylesheet" href="css/animate.css" />
 
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header animate__animated animate__fadeIn">
       <div class="container">
         <div class="header__nav-menu">
-          <ul class="menu__items">
-            <li class="menu__item">Маршрут</li>
-            <li class="menu__item">Отель</li>
-            <li class="menu__item">Стоимость</li>
+          <ul class="menu__items animate__animated animate__backInLeft">
+            <li class="menu__item"><a href="#trip">Маршрут</a></li>
+            <li class="menu__item"><a href="#hotel">Отель</a></li>
+            <li class="menu__item"><a href="#price">Стоимость</a></li>
           </ul>
-          <a href="tel:+380665557776" class="menu__phone">+38(066)555-777-6</a>
+          <a
+            href="tel:+380665557776"
+            class="menu__phone animate__animated animate__backInRight"
+            >+38(066)555-777-6</a
+          >
         </div>
-        <h1 class="header__title animate__animated animate__fadeInDown">
+        <h1 class="header__title animate__animated animate__backInDown">
           Cappadocia
         </h1>
-        <p class="header__text-describe">Эксклюзивный тур</p>
+        <p class="header__text-describe animate__animated animate__flipInX">
+          Эксклюзивный тур
+        </p>
       </div>
     </header>
     <main class="main">
       <section class="section">
         <div class="container">
-          <h3 class="fairy-tail__title title">
+          <h3
+            class="fairy-tail__title title wow animate__animated animate__backInDown"
+          >
             Fairy tail <span>Сказочная страна чудес</span>
           </h3>
         </div>
         <div class="big-container">
           <div class="fairy-tail__inner">
-            <div class="fairy-tail__slider">
+            <div
+              class="fairy-tail__slider wow animate__animated animate__backInLeft"
+            >
               <div class="fairy-tail__item">
                 <img src="./images/slider1-1.jpg" alt="" />
               </div>
@@ -55,7 +60,9 @@
               </div>
             </div>
 
-            <div class="fairy-tail__content">
+            <div
+              class="fairy-tail__content wow animate__animated animate__fadeInRight"
+            >
               <div class="fairy-tail__container">
                 <div class="fairy-tail__body">
                   <p class="fairy-tail__text">
@@ -93,7 +100,7 @@
           </div>
         </div>
       </section>
-      <section class="bronm">
+      <section id="trip" class="bronm">
         <div class="big-container">
           <div class="fairy-tail__inner poriadok">
             <div class="fairy-tail__slider">
@@ -153,7 +160,7 @@
           </div>
         </div>
       </section>
-      <section class="hotel">
+      <section id="hotel" class="hotel">
         <div class="container">
           <h3 class="fairy-tail__title title">
             Hotel <span>Sultan Cave Suites</span>
@@ -200,7 +207,7 @@
           </div>
         </div>
       </section>
-      <section class="price">
+      <section id="price" class="price">
         <div class="container">
           <h3 class="fairy-tail__title title">
             Price <span>Стоимость услуг</span>
@@ -223,7 +230,7 @@
                 <li class="price__item">
                   Фотосессия с профессиональным фотографом для каждой участницы
                   (Несколько локаций, 5 лучших фото в обработке фотографа и весь
-                  материал (до 100 фотографий)
+                  материал (до 100 фотографий))
                 </li>
               </ul>
             </div>
@@ -246,7 +253,7 @@
           </div>
         </div>
       </section>
-      <!-- <section class="zakaz">
+      <section class="zakaz">
         <div class="container">
           <div class="zakaz__wrapper">
             <div class="zakaz__contant">
@@ -276,10 +283,15 @@
         <div class="footer__wrapper">
           <div class="footer__feft">
             <h4 class="footer__title">Contacts</h4>
-            <a href="" class="footer__tel">+38(066)555-777-6</a>
+            <a href="tel:+380665557776" class="footer__tel"
+              >+38(066)555-777-6</a
+            >
             <div class="d20"></div>
-            <a href="" class="footer__mail">сappadocia.tours@gmail.com</a>
+            <a href="mailto:сappadocia.tours@gmail.com" class="footer__mail"
+              >сappadocia.tours@gmail.com</a
+            >
             <div class="d38"></div>
+            <a href="mailto:" class=""></a>
             <div class="footer__social">
               <a href="#" class="footer__social-icon"
                 ><img src="./images/youtube.svg" alt=""
@@ -298,9 +310,11 @@
         </div>
       </div>
     </footer>
-    -->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/wow.min.js"></script>
+
     <script src="./js/fancybox.umd.js"></script>
     <script src="js/main.js"></script>
   </body>
